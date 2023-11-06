@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>46-setTimeout-setInterval</title>
+  </head>
+  <style>
+    .alert {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      margin: 0;
+      background-color: #fff;
+      color: #2a2a2a;
+      border: 1px solid #2a2a2a;
+      border-radius: 3px;
+      padding: 24px;
+      user-select: none;
+      cursor: pointer;
+
+      transform: translateX(calc(100% + 20px));
+      visibility: hidden;
+      opacity: 0;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .alert.success {
+      border: 1px solid #388e3c;
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    .alert.is-visible {
+      transform: translateX(0);
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .spam {
+      font-size: 45px;
+      font-weight: 700;
+      color: #388e3c;
+      text-align: center;
+    }
+    .timer-ad {
+      font-size: 75px;
+      font-weight: 900;
+      color: #388e3c;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <p>
+      Two seconds after clicking the button, alert specified inside the setTimeout callback will
+      appear.
+    </p>
+    <button type="button" class="btn">Click me - setTimeout</button>
+    <p>
+      By clicking on the "Start" button, we will start the interval and output a line to the console
+      every second. We use Math.random() so that the lines are different. After clicking on the
+      "Stop" button, we will call clearInterval() and pass the identifier of the interval that needs
+      to be stopped.
+    </p>
+    <button class="btn js-start">Start - setInterval</button>
+    <button class="btn js-stop">Stop - clearInterval</button>
+
+    <!-- NOTIFICATIONS -->
+    <p class="alert success js-alert">Operation successful!</p>
+
+    <!-- spam -->
+    <button class="js-test-btn" type="button">Test button</button>
+    <div class="spam js-spam">I`m ad-spam! Hello!</div>
+    <div class="timer-ad js-timer-ad"></div>
+
+    <script src="./app/46-setTimeout-setInterval.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Context This</title>
+    <link rel="stylesheet" href="./css/this.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:regular,700,italic,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <ul class="main-list-links">
+      <li class="main-item">
+        <a class="main-link" href="./index.html">Card Fate</a>
+      </li>
+      <li class="main-item">
+        <a class="main-link" href="./flex-panel.html">Flex Panel</a>
+      </li>
+      <li class="main-item">
+        <a class="main-link" href="./11-prototype.html">CounterPlugin</a>
+      </li>
+    </ul>
+    <div class="counter">
+      <div class="counter__container">
+        <div class="counter__content">
+          <button class="js-increment" type="button">UP</button>
+          <p class="js-value">0</p>
+          <button class="js-decrement" type="button">DOWN</button>
+          <button class="js-sound paused" type="button">Sound</button>
+          <audio src="./media/audio/hard.mp3" class="js-audio" loop></audio>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn js-btnMango">Test Console</button>
+
+    <script src="./app/10_this.js" type="module"></script>
+  </body>
+</html>

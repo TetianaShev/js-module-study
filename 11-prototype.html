@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia+Sans:regular,500,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/prototype.css" />
+  </head>
+  <body>
+    <ul class="main-list-links">
+      <li class="main-item">
+        <a class="main-link" href="./index.html">Card Fate</a>
+      </li>
+      <li class="main-item">
+        <a class="main-link" href="./flex-panel.html">Flex Panel</a>
+      </li>
+      <li class="main-item">
+        <a class="main-link" href="./10-this.html">Counter</a>
+      </li>
+    </ul>
+    <!-- PLUGIN COUNTER -->
+    <div class="counter">
+      <div id="counter-1" class="button-wrapper">
+        <button data-increment type="button" class="js-sound paused">ADD</button>
+        <audio src="./media/audio/add.mp3" class="js-audio-add"></audio>
+        <span data-value>0</span>
+        <button data-decrement type="button" class="js-sound paused">DECREASE</button>
+        <audio src="./media/audio/decrease.mp3" class="js-audio-decrease"></audio>
+      </div>
+
+      <div id="counter-2" class="button-wrapper">
+        <button data-increment type="button" class="paused">ADD</button>
+        <audio src="./media/audio/add.mp3" class="js-audio-add"></audio>
+        <span data-value>0</span>
+        <button data-decrement type="button" class="paused">DECREASE</button>
+        <audio src="./media/audio/decrease.mp3" class="js-audio-decrease"></audio>
+      </div>
+    </div>
+
+    <!-- SIEMA -->
+
+    <!-- <div id="siema">
+      <img src="./media/1.jpg" width=" 500" height="auto" class="siema-img" />
+      <img src="./media/2.jpg" width=" 500" height="auto" class="siema-img" />
+      <img src="./media/3.jpg" width=" 500" height="auto" class="siema-img" />
+      <img src="./media/4.jpg" width=" 500" height="auto" class="siema-img" />
+      <img src="./media/5.jpg" width=" 500" height="auto" class="siema-img" />
+    </div>
+    <div class="button-wrapper">
+      <button class="prev">prev</button>
+      <button class="next">next</button>
+    </div> -->
+
+    <!-- siema -->
+    <!-- SIEMA DOESN`T WORKING WITHOUT PLUGIN -->
+    <!-- <script src="siema/dist/siema.min.js" type="text/javascript"></script>
+    <script>
+      new Siema();
+    </script> -->
+    <script src="./app/11-prototype.js" type="module"></script>
+  </body>
+</html>

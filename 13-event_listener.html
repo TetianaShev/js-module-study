@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+
+    <link rel="stylesheet" href="./css/13-event-listener.css" />
+  </head>
+
+  <body>
+    <!-- modal -->
+    <button class="button" data-action="open-modal">Open modal</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          In user interface design for computer applications, a modal window is a graphical control
+          element subordinate to an application's main window. It creates a mode that disables the
+          main window but keeps it visible, with the modal window as a child window in front of it.
+          Users must interact with the modal window before they can return to the parent
+          application. This avoids interrupting the workflow on the main window. Modal windows are
+          sometimes called heavy windows or modal dialogs because they often display a dialog box.
+        </p>
+        <button type="button" class="button-modal" data-action="close-modal">Закрыть</button>
+      </div>
+    </div>
+
+    <!-- btns -->
+    <div class="btn-wrapper">
+      <button class="js-target-btn" type="button">Target btn</button>
+      <button class="js-add-listener-btn" type="button">Add event listener</button>
+      <button class="js-remove-listener-btn" type="button">Remove event listener</button>
+    </div>
+
+    <!-- forms -->
+    <div class="form-wrapper">
+      <form class="js-register-form" autocomplete="off">
+        <div role="group">
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" />
+          </label>
+        </div>
+        <br />
+        <div role="group">
+          <b>Type of subscription:</b>
+          <label>
+            <input type="radio" name="subscription" value="free" />
+            Free
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="basic" />
+            Basic
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="pro" />
+            Pro
+          </label>
+        </div>
+        <br />
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+    <!-- <form action="" autocomplete="off"> -->
+    <label>
+      Name
+      <input type="text" class="js-input" />
+    </label>
+
+    <p>
+      <label>
+        <input type="checkbox" class="js-license" />
+        Accept the license agreement
+      </label>
+    </p>
+
+    <button type="submit" disabled class="js-button btn-submit">
+      Sign in as <span>Anonymous</span>
+    </button>
+    <!-- </form> -->
+    <!-- keypress -->
+    <button class="js-clear">Clear</button>
+    <p class="output js-output"></p>
+    <!-- mouse events -->
+    <div class="box js-box">
+      <div class="inner-box"></div>
+    </div>
+    <!-- anonymous -->
+    <input type="text" id="name-input" placeholder="Please enter your name" />
+    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+    <!-- check validation-input -->
+    <input type="text" id="validation-input" data-length="6" placeholder="Please enter 6 symbols" />
+    <!-- font-size-control -->
+    <input id="font-size-control" type="range" min="16" max="96" />
+    <br />
+    <span id="text">Abracadabra!</span>
+    <!-- form.login-form -->
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+    <!-- widget change-color -->
+    <div class="widget">
+      <p>Background color: <span class="color">-</span></p>
+      <button type="button" class="change-color">Change color</button>
+    </div>
+    <!-- controls -->
+    <div id="controls">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" data-create>Create</button>
+      <button type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div>
+    <div class="box-move js-box-move"></div>
+    <!-- buttons remove event listener -->
+    <button type="button" class="btn-exp">Click</button>
+    <h2 class="title-click">It`s title</h2>
+
+    <!-- form search -->
+    <form action="submit" class="js-search">
+      <input type="text" name="queryValue" />
+      <select name="selectValue">
+        <option value="car">Марка</option>
+        <option value="type">Модель</option>
+      </select>
+      <button type="submit">Пошук</button>
+    </form>
+    <ul class="js-list-search"></ul>
+    <!-- FORM input -->
+    <input type="text" class="js-input-exp" />
+    <!-- keyDown Ctrl + C Shift  Block copy-->
+    <h1>Hello world</h1>
+    <script src="./app/13-event-listener.js" type="module"></script>
+  </body>
+</html>

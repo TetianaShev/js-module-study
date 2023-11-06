@@ -1,0 +1,129 @@
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+
+  background-color: rgb(190, 255, 251);
+  height: 100vh;
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  line-height: 1.79;
+}
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+[class*='__container'] {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1330px;
+}
+
+.counter__content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 3.125rem;
+}
+
+.js-audio {
+  margin: 50px 50px;
+}
+
+button {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: -0.3125rem -0.3125rem 1.25rem #fff, 0.3125rem 0.3125rem 1.25rem #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: #f7eff4;
+  text-shadow: 0.0313rem 0.0313rem 0rem #baa2c5, -0.0313rem -0.0313rem 0rem #ffffff;
+  transition: 0.05s ease;
+}
+
+button:hover {
+  box-shadow: -0.0313rem -0.0313rem 0.125rem #fff, 0.0313rem 0.0313rem 0.125rem rgba(83, 8, 8, 0.8);
+  text-shadow: -0.0313rem -0.0313rem 0rem #baa2c5, 0.0313rem 0.0313rem 0rem #ffffff;
+}
+
+button:active {
+  box-shadow: -0.0313rem -0.0313rem 0.125rem #fff, 0.0313rem 0.0313rem 0.125rem rgba(83, 8, 8, 0.8);
+  text-shadow: -0.0313rem -0.0313rem 0rem #baa2c5, 0.0313rem 0.0313rem 0rem #ffffff;
+}
+
+.js-value {
+  color: #f1ebe5;
+  text-shadow: 0 4px 5px #c4b59d, 0rem -2px 1px #fff;
+  font-size: 2.125rem;
+  font-weight: 700;
+}
+
+.paused {
+  transition: 0.05s ease;
+}
+
+/* link */
+.main-list-links {
+  position: fixed;
+  top: 1.25rem;
+  left: 0.625rem;
+  z-index: 10;
+
+  list-style: none;
+}
+
+.main-item {
+  margin-bottom: 3.125rem;
+}
+
+.main-link {
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+
+  max-width: 9.375rem;
+  padding: 0.5rem 0.75rem;
+
+  border: 0;
+  outline: 0;
+  border-radius: 20rem;
+
+  background-color: transparent;
+  text-shadow: 0.0313rem 0.0313rem 0.0225rem #fff, -0.0113rem -0.0113rem 0.01rem #381747;
+  backdrop-filter: shadow(0.625rem);
+
+  font-size: 0.875rem;
+  font: inherit;
+  font-weight: bold;
+
+  color: #97f1ff;
+  box-shadow: -0.125rem -0.125rem 1.25rem #fff, 0.125rem 0.125rem 0.125rem #baa2c5;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.main-link:focus,
+.main-link:hover {
+  box-shadow: -0.125rem -0.125rem 0.3125rem #fff, 0.125rem 0.125rem 0.125rem #baa2c5;
+  text-decoration: none;
+  color: rgb(253, 248, 255);
+  text-shadow: 0.0313rem 0.0313rem 0rem #2f0044, -0.0313rem -0.0313rem 0rem #ffffff;
+}
+
+.main-link:active {
+  box-shadow: inset 0.0125rem 0.0125rem 0.125rem #babecc, -0.01125rem -0.0125rem 0.325rem #fff;
+  text-decoration: none;
+  color: rgb(243, 220, 253);
+  text-shadow: 0.0313rem 0.0313rem 0rem #2f0044, -0.0313rem -0.0313rem 0rem #ffffff;
+}

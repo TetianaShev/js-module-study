@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>localStorage</title>
+    <style>
+      body {
+        padding: 16px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 1st block -->
+    <button class="js-addLocal">Add to LocalStorage</button>
+    <button class="js-removeLocal">Remove from LocalStorage</button>
+    <button class="js-getLocal">Get from LocalStorage</button>
+
+    <button class="js-addSession">Add to SessionStorage</button>
+    <button class="js-removeSession">Remove from SessionStorage</button>
+
+    <!-- 2nd block FORM-->
+    <p>Value from localStorage: <span id="output"></span></p>
+    <form id="message-form">
+      <input type="text" class="input" name="message" />
+      <button type="submit" class="btn">Save</button>
+    </form>
+    <script src="./app/38-local-storage.js"></script>
+  </body>
+</html>

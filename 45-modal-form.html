@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal</title>
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/modal.css" />
+    <style>
+      body.show-modal .backdrop {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+      }
+
+      body.show-modal .modal {
+        transform: scale(1);
+      }
+
+      .backdrop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 999;
+
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+      }
+
+      .modal {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        border-radius: 4px;
+        max-width: 640px;
+        width: 100%;
+        min-height: 320px;
+        background-color: #fff;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+        transform: scale(1.1);
+        transition: transform 200ms ease-in-out;
+      }
+
+      .modal-content__wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .login-form span {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .login-form input,
+      .login-form button {
+        max-width: 100%;
+        padding: 14px;
+        font: inherit;
+      }
+
+      label {
+        margin-bottom: 10px;
+      }
+
+      button[type='submit'] {
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      input {
+        border: 2px solid #bdbdbd;
+      }
+
+      .valid {
+        border-color: #4caf50;
+      }
+
+      .invalid {
+        border-color: #f44336;
+      }
+
+      .close-modal {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: #ffffff9d;
+        color: #000;
+        font-size: 1rem;
+      }
+
+      .license {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="button" data-action="open-modal">Open modal</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal js-modal-content">
+        <div class="modal-content__wrapper">
+          <h2>Sign In</h2>
+          <button type="button" class="button-modal" data-action="close-modal">&times;</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app/45-modal-form.js" type="module"></script>
+  </body>
+</html>

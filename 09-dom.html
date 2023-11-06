@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./css/dom.css" />
+  </head>
+  <body>
+    <button type="button" class="magic-btn js-magic-btn">
+      Click me
+      <span class="icon">🧙‍♂️</span>
+    </button>
+    <!-- picture -->
+    <div class="picture"></div>
+    <img class="image-laptop" src="https://picsum.photos/id/9/320/240" alt="A laptop" width="300" />
+    <!-- nav menu -->
+    <ul class="site-nav js-site-nav">
+      <li class="site-nav__item"><a href="/about" class="site-nav__link main"> About us</a></li>
+
+      <li class="site-nav__item"><a href="/reviews" class="site-nav__link">Reviews</a></li>
+
+      <li class="site-nav__item"><a href="/contacts" class="site-nav__link">Contacts</a></li>
+    </ul>
+
+    <textarea id="message" class="materialize-text-area" rows="5">Text default</textarea>
+
+    <!-- hero -->
+    <section class="hero">
+      <h1 class="hero__title">Kitten</h1>
+      <img
+        class="hero__image"
+        src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480"
+        alt="It's me"
+        width="320"
+      />
+    </section>
+
+    <!-- btns -->
+    <div class="js-actions">
+      <button type="button" data-action="add">Add</button>
+      <button type="button" data-action="remove">Remove</button>
+      <button type="button" data-action="edit" data-name="example">Edit</button>
+    </div>
+    <!-- color-picker -->
+    <div class="color-picker js-color-picker"></div>
+    <div class="color-picker js-color-picker--row"></div>
+
+    <!-- card product -->
+    <div class="js-products"></div>
+    <!-- templating -->
+    <h2 class="title">This <span>title</span></h2>
+
+    <!-- transactions -->
+    <table class="transaction-table js-transaction-table">
+      <thead>
+        <tr>
+          <th>ID transition</th>
+          <th>Summary</th>
+          <th>Date</th>
+          <th>Who</th>
+          <th>Type transition</th>
+          <th>Account Name</th>
+          <th>Account Number</th>
+        </tr>
+      </thead>
+    </table>
+    <!--  categories -->
+    <ul id="categories">
+      <li class="item">
+        <h2 class="item-class">Animals</h2>
+        <ul>
+          <li>Cat</li>
+          <li>Hamster</li>
+          <li>Horse</li>
+          <li>Parrot</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2 class="item-class">Products</h2>
+        <ul>
+          <li>Bread</li>
+          <li>Prasley</li>
+          <li>Cheese</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2 class="item-class">Technologies</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ingredients -->
+    <ul id="ingredients"></ul>
+    <!-- gallery -->
+    <ul class="gallery"></ul>
+    <ul class="gallery2"></ul>
+    <ul class="gallery3"></ul>
+    <ul class="gallery4"></ul>
+    <ul class="gallery5"></ul>
+    <!-- counter -->
+    <div class="js-counter"></div>
+    <!-- counter class -->
+    <div class="js-counter2">
+      <button class="btn-plus" type="button">+1</button>
+      <p class="value">0</p>
+      <button class="btn-min" type="button">-1</button>
+    </div>
+
+    <div id="main-container"></div>
+    <aside id="article"></aside>
+    <!-- ul li static dynemic -->
+    <ul class="js-list">
+      <li class="js-item">1</li>
+      <li class="js-item">2</li>
+      <li class="js-item">3</li>
+      <li class="js-item">4</li>
+    </ul>
+    <ul class="js-list-example">
+      <li class="js-item-example">1</li>
+      <li class="js-item-example">2</li>
+      <li class="js-item-example">3</li>
+      <li class="js-item-example">4</li>
+    </ul>
+    <button>click me</button>
+    <ul class="js-cars">
+      <!-- <li>It`s li from ul</li> -->
+    </ul>
+    <article class="article">
+      <h2 class="title">Article title</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa quibusdam!
+        Praesentium accusantium fugiat distinctio quidem minima fugit eos, veniam, nam laboriosam
+        deleniti nisi qui neque explicabo perspiciatis, consectetur non.
+      </p>
+      <a class="link" href="">Read more</a>
+    </article>
+    <script src="./app/09_dom_query-selectors.js" type="module"></script>
+  </body>
+</html>
